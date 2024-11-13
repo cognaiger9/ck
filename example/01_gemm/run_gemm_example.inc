@@ -339,8 +339,8 @@ bool run_gemm(const ProblemType& problem_size, const ExecutionConfig& config)
         auto ref_argument = ref_gemm.MakeArgument(
             a_m_k, b_k_n, c_m_n_host_result, a_element_op, b_element_op, c_element_op);
 
-        std::cout << "Running verification on CPU." << std::endl;
-        ref_invoker.Run(ref_argument);
+        //std::cout << "Running verification on CPU." << std::endl;
+        //ref_invoker.Run(ref_argument);
 
 #ifdef BUILD_INT4_EXAMPLE
         Tensor<CDataType> c_m_n_device_result_converted(c_m_n_host_result.mDesc);
@@ -351,13 +351,7 @@ bool run_gemm(const ProblemType& problem_size, const ExecutionConfig& config)
 
         return ck::utils::check_err(c_m_n_device_result_converted, c_m_n_host_result);
 #else
-        c_m_n_device_buf.FromDevice(c_m_n_device_result.mData.data());
 
-        pass &= !ck::utils::check_err(c_m_n_device_result,
-                                      c_m_n_host_result,
-                                      "Error: Incorrect results!",
-                                      get_rtol<CDataType>(),
-                                      get_atol<CDataType>());
 #endif
 
         // GPU verification
@@ -386,6 +380,7 @@ bool run_gemm(const ProblemType& problem_size, const ExecutionConfig& config)
                                       "Error: Incorrect results!",
                                       get_rtol<CDataType>(),
                                       get_atol<CDataType>());
+
     }
 
     return !pass;

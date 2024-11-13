@@ -1,0 +1,30 @@
+a_m_k: dim 2, lengths {216064, 1152}, strides {1152, 1}
+b_k_n: dim 2, lengths {1152, 1152}, strides {1152, 1}
+c_m_n: dim 2, lengths {216064, 1152}, strides {1152, 1}
+Perf: 2.95581 ms, 194.018 TFlops, 337.734 GB/s, DeviceGemm_Xdl_CShuffle<Default, 1, 256, 256, 128, 64, 8, 2, 32, 32, 4, 2, 2, 2, 2, 0, 2, 2, 2, 0, 2, 2, 2, > LoopScheduler: Interwave, PipelineVersion: v1
+Running verification on GPU.
+1
+a_m_k: dim 2, lengths {216064, 1152}, strides {1152, 1}
+b_k_n: dim 2, lengths {1152, 1152}, strides {1152, 1}
+c_m_n: dim 2, lengths {216064, 1152}, strides {1152, 1}
+Perf: 2.766 ms, 207.332 TFlops, 360.91 GB/s, DeviceGemm_Xdl_CShuffle<Default, 1, 256, 256, 128, 64, 8, 4, 32, 32, 4, 2, 2, 2, 2, 0, 2, 2, 2, 0, 2, 2, 2, > LoopScheduler: Interwave, PipelineVersion: v1
+Running verification on GPU.
+1
+a_m_k: dim 2, lengths {216064, 1152}, strides {1152, 1}
+b_k_n: dim 2, lengths {1152, 1152}, strides {1152, 1}
+c_m_n: dim 2, lengths {216064, 1152}, strides {1152, 1}
+Perf: 2.93508 ms, 195.388 TFlops, 340.119 GB/s, DeviceGemm_Xdl_CShuffle<Default, 1, 256, 256, 128, 64, 8, 2, 32, 32, 4, 2, 2, 2, 2, 0, 2, 2, 2, 0, 2, 2, 4, > LoopScheduler: Interwave, PipelineVersion: v1
+Running verification on GPU.
+1
+a_m_k: dim 2, lengths {216064, 1152}, strides {1152, 1}
+b_k_n: dim 2, lengths {1152, 1152}, strides {1152, 1}
+c_m_n: dim 2, lengths {216064, 1152}, strides {1152, 1}
+Perf: 16.9404 ms, 33.8528 TFlops, 58.929 GB/s, DeviceGemm_Xdl_CShuffle<Default, 1, 256, 256, 128, 64, 8, 4, 32, 32, 4, 2, 2, 2, 2, 0, 2, 2, 2, 0, 2, 2, 4, > LoopScheduler: Interwave, PipelineVersion: v1
+Running verification on GPU.
+1
+a_m_k: dim 2, lengths {216064, 1152}, strides {1152, 1}
+b_k_n: dim 2, lengths {1152, 1152}, strides {1152, 1}
+c_m_n: dim 2, lengths {216064, 1152}, strides {1152, 1}
+Perf: 2.92055 ms, 196.36 TFlops, 341.811 GB/s, DeviceGemm_Xdl_CShuffle<Default, 1, 256, 256, 128, 64, 8, 2, 32, 32, 4, 2, 2, 2, 2, 0, 2, 2, 2, 0, 2, 2, 8, > LoopScheduler: Interwave, PipelineVersion: v1
+Running verification on GPU.
+1

@@ -27,7 +27,7 @@ using DeviceGemmInstance = ck::tensor_operation::device::DeviceGemm_Xdl_CShuffle
 // ######|        |        |        |      Type|      Type|      Type|        Type|         DataType| Elementwise| Elementwise| Elementwise| Spacialization| Prefetch|  Size| Block| Block| Block|    |    |  XDL|  XDL|  Per|  Per|   ThreadCluster|  ThreadCluster| SrcAccessOrder|   SrcVectorDim|      SrcScalar|      DstScalar| AddExtraM|   ThreadCluster|  ThreadCluster| SrcAccessOrder|  SrcVectorDim|      SrcScalar|      DstScalar| AddExtraN| MXdlPerWave| NXdlPerWave|         _MBlock_MWaveMPerXdl| ScalarPerVector|
 // ######|        |        |        |          |          |          |            |                 |   Operation|   Operation|   Operation|               |    Stage|      |      |      |      |    |    |     |     | Wave| Wave| Lengths_K0_M_K1|   ArrangeOrder|               |               |      PerVector|   PerVector_K1|          | Lengths_K0_N_K1|   ArrangeOrder|               |              |      PerVector|   PerVector_K1|          |  PerShuffle|  PerShuffle|         _NBlock_NWaveNPerXdl|   _NWaveNPerXdl|
 // ######|        |        |        |          |          |          |            |                 |            |            |            |               |         |      |      |      |      |    |    |     |     |     |     |                |               |               |               |               |               |          |                |               |               |              |               |               |          |            |            |                             |                |
-         < ALayout, BLayout, CLayout, ADataType, BDataType, CDataType, AccDataType, CShuffleDataType,  AElementOp,  BElementOp,  CElementOp,    GemmDefault,        1,   256,   256,   128,    64,  16,  16,   32,   32,    4,    2,     S<4, 64, 1>,     S<1, 0, 2>,     S<1, 0, 2>,              2,             8,             8,         1,     S<4, 64, 1>,     S<1, 0, 2>,     S<1, 0, 2>,             2,              8,              4,         1,           1,           1,               S<1, 64, 1, 4>,              16>;
+         < ALayout, BLayout, CLayout, ADataType, BDataType, CDataType, AccDataType, CShuffleDataType,  AElementOp,  BElementOp,  CElementOp,    GemmDefault,        1,   256,   MPB,   NPB,   KPB,  16, BK11, MPXDL,NPXDL,  MXPW, NXPW,    S<4, 64, 1>,     S<1, 0, 2>,     S<1, 0, 2>,             2,           ASP,            ADB,     BOOL1,     S<4, 64, 1>,     S<1, 0, 2>,     S<1, 0, 2>,           BS1,            BSP,            BDP,     BOOL2,       CMPS,           1,             S<1, 64, 1, 4>,              CSPS>;
 // clang-format on
 
 using ReferenceGemmInstance = ck::tensor_operation::host::
@@ -46,4 +46,8 @@ using ReferenceGemmInstanceGPU = ck::tensor_operation::device::ReferenceGemm<ALa
 
 #include "run_gemm_example.inc"
 
-int main(int argc, char* argv[]) { return !run_gemm_example(argc, argv); }
+int main(int argc, char* argv[]) { 
+    bool res = run_gemm_example(argc, argv);
+    std::cout << res << std::endl; 
+    return 0;
+}
