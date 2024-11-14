@@ -62,7 +62,6 @@ for mpb in "${MPB[@]}"; do
                                                                 
                                                                 if ! make -j4 -C ../build ${EXE_FILE}; then
                                                                     echo "Error: make failed for ${EXE_FILE}" >&2
-                                                                    exit 1
                                                                 fi
                                                                 
                                                                 # Run executable

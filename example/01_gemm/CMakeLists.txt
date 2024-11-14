@@ -167,6 +167,30 @@ endforeach()
 add_example_executable(example_gemm_xdl_fp8 gemm_xdl_fp8.cpp)
 add_example_dependencies(example_gemm_xdl example_gemm_xdl_fp8)
 
+add_example_executable(gemm_fp8_1 gemm_fp8_1.cpp)
+add_example_dependencies(example_gemm_xdl gemm_fp8_1)
+
+add_example_executable(gemm_fp8_2 gemm_fp8_2.cpp)
+add_example_dependencies(example_gemm_xdl gemm_fp8_2)
+
+add_example_executable(gemm_fp8_3 gemm_fp8_3.cpp)
+add_example_dependencies(example_gemm_xdl gemm_fp8_3)
+
+add_example_executable(gemm_fp8_4 gemm_fp8_4.cpp)
+add_example_dependencies(example_gemm_xdl gemm_fp8_4)
+
+add_example_executable(gemm_fp8_5 gemm_fp8_5.cpp)
+add_example_dependencies(example_gemm_xdl gemm_fp8_5)
+
+add_example_executable(gemm_fp8_6 gemm_fp8_6.cpp)
+add_example_dependencies(example_gemm_xdl gemm_fp8_6)
+
+add_example_executable(gemm_fp8_7 gemm_fp8_7.cpp)
+add_example_dependencies(example_gemm_xdl gemm_fp8_7)
+
+add_example_executable(gemm_fp8_8 gemm_fp8_8.cpp)
+add_example_dependencies(example_gemm_xdl gemm_fp8_8)
+
 add_example_executable(gemm_fp8_1_1 gemm_fp8_1_1.cpp)
 add_example_dependencies(example_gemm_xdl gemm_fp8_1_1)
 
