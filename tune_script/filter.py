@@ -11,7 +11,7 @@ best_entry = ""
 perf_pattern = re.compile(r"Perf: .*?(\d+\.\d+) TFlops")
 valid_pattern = re.compile(r"^\d+$")
 
-with open("../tunning_output/int8_216064x4608x1152_mi300_2.txt", "r") as file:
+with open("../tunning_output/fp16_216064x4608x1152_mi300_2.txt", "r") as file:
     current_entry = ""
     for line in file:
         # Accumulate lines to form the current entry
