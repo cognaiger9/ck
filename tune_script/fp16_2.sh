@@ -1,5 +1,5 @@
 #!/bin/bash
-export ROCR_VISIBLE_DEVICES=3
+export ROCR_VISIBLE_DEVICES=2
 
 # Fixed path
 OUT_TEXT_DIR="../tunning_output"
@@ -7,9 +7,9 @@ OUT_TEXT_DIR="../tunning_output"
 SOURCE_FILE="../example/01_gemm/gemm_fp16.cpp"
 
 # Variable
-M=216064
-N=4608
-K=1152
+M=11776
+N=1536
+K=6144
 TYPE="fp16"
 PARTITION=2
 GPU="mi300"
@@ -31,11 +31,11 @@ CMPS=(2)
 CSPS=(2 4 8)
 BK1=(2 4)
 
-MPB=(256)
+MPB=(128 256)
 NPB=(128)
 KPB=(64 32)
 RES=(2)
-MXPW=(4)
+MXPW=(2 4)
 NXPW=(2)
 
 for mpb in "${MPB[@]}"; do
@@ -57,6 +57,14 @@ for mpb in "${MPB[@]}"; do
                                                     for cmps in "${CMPS[@]}"; do
                                                         for csps in "${CSPS[@]}"; do
                                                             for bk1 in "${BK1[@]}"; do
+                                                                if [[ "$mpb" == 256 && "$mxpw" == 2 ]]; then
+                                                                    continue
+                                                                fi
+
+                                                                if [[ "$mpb" == 128 && "$mxpw" == 4 ]]; then
+                                                                    continue
+                                                                fi
+
                                                                 # Substitute the placeholders in the source file
                                                                 sed "s/MPB/$mpb/g; s/NPB/$npb/g; s/KPB/$kpb/g; s/MXPW/$mxpw/g; s/NXPW/$nxpw/g; s/MPXDL/$mpxdl/g; s/NPXDL/$npxdl/g; s/ASP/$asp/g; s/ADB/$adb/g; s/BOOL1/$bool1/g; s/BS1/$bs/g; s/BSP/$bsp/g; s/BDP/$bdp/g; s/BOOL2/$bool2/g; s/CMPS/$cmps/g; s/CSPS/$csps/g; s/BK11/$bk1/g" "$SOURCE_FILE" > "$TEMP_FILE"
                                                                 

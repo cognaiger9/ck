@@ -1,5 +1,5 @@
 #!/bin/bash
-export ROCR_VISIBLE_DEVICES=4
+export ROCR_VISIBLE_DEVICES=2
 
 # Fixed path
 OUT_TEXT_DIR="../tunning_output"
@@ -17,7 +17,7 @@ GPU="mi300"
 # Temporary file to store modified code
 EXE_FILE="gemm_fp16_${PARTITION}"
 TEMP_FILE="../example/01_gemm/${EXE_FILE}.cpp"
-OUTPUT_FILE="${OUT_TEXT_DIR}/${TYPE}_${M}x${N}x${K}_${GPU}_${PARTITION}.txt"
+OUTPUT_FILE="${OUT_TEXT_DIR}/${TYPE}_${M}x${N}x${K}_${GPU}_${PARTITION}_RCR.txt"
 
 # Block size = 256 ()
 ASP=(2 4 8)
@@ -66,7 +66,7 @@ for mpb in "${MPB[@]}"; do
                                                                 
                                                                 # Run executable
                                                                 # row row row
-                                                                ../build/bin/$EXE_FILE 1 0 1 ${M} ${N} ${K} ${K} ${N} ${N} >> "${OUTPUT_FILE}"
+                                                                ../build/bin/$EXE_FILE 1 0 1 ${M} ${N} ${K} ${K} ${K} ${N} >> "${OUTPUT_FILE}"
                                                                 rm ../build/bin/$EXE_FILE
                                                             done
                                                         done
