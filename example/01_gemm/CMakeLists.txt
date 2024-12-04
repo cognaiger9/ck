@@ -19,35 +19,32 @@ add_custom_target(example_gemm_xdl)
 add_example_executable(gemm_fp16 gemm_fp16.cpp)
 add_example_dependencies(example_gemm_xdl gemm_fp16)
 
-add_example_executable(temp_gemm_fp16 temp_gemm_fp16.cpp)
-add_example_dependencies(example_gemm_xdl temp_gemm_fp16)
+add_example_executable(gemm_fp16_1 gemm_fp16_1.cpp)
+add_example_dependencies(example_gemm_xdl gemm_fp16_1)
 
-add_example_executable(temp_gemm_fp16_1 temp_gemm_fp16_1.cpp)
-add_example_dependencies(example_gemm_xdl temp_gemm_fp16_1)
+add_example_executable(gemm_fp16_2 gemm_fp16_2.cpp)
+add_example_dependencies(example_gemm_xdl gemm_fp16_2)
 
-add_example_executable(temp_gemm_fp16_2 temp_gemm_fp16_2.cpp)
-add_example_dependencies(example_gemm_xdl temp_gemm_fp16_2)
+add_example_executable(gemm_fp16_3 gemm_fp16_3.cpp)
+add_example_dependencies(example_gemm_xdl gemm_fp16_3)
 
-add_example_executable(temp_gemm_fp16_3 temp_gemm_fp16_3.cpp)
-add_example_dependencies(example_gemm_xdl temp_gemm_fp16_3)
+add_example_executable(gemm_fp16_4 gemm_fp16_4.cpp)
+add_example_dependencies(example_gemm_xdl gemm_fp16_4)
 
-add_example_executable(temp_gemm_fp16_4 temp_gemm_fp16_4.cpp)
-add_example_dependencies(example_gemm_xdl temp_gemm_fp16_4)
+add_example_executable(gemm_fp16_5 gemm_fp16_5.cpp)
+add_example_dependencies(example_gemm_xdl gemm_fp16_5)
 
-add_example_executable(temp_gemm_fp16_5 temp_gemm_fp16_5.cpp)
-add_example_dependencies(example_gemm_xdl temp_gemm_fp16_5)
+add_example_executable(gemm_fp16_6 gemm_fp16_6.cpp)
+add_example_dependencies(example_gemm_xdl gemm_fp16_6)
 
-add_example_executable(temp_gemm_fp16_6 temp_gemm_fp16_6.cpp)
-add_example_dependencies(example_gemm_xdl temp_gemm_fp16_6)
+add_example_executable(gemm_fp16_7 gemm_fp16_7.cpp)
+add_example_dependencies(example_gemm_xdl gemm_fp16_7)
 
-add_example_executable(temp_gemm_fp16_7 temp_gemm_fp16_7.cpp)
-add_example_dependencies(example_gemm_xdl temp_gemm_fp16_7)
+add_example_executable(gemm_fp16_8 gemm_fp16_8.cpp)
+add_example_dependencies(example_gemm_xdl gemm_fp16_8)
 
-add_example_executable(temp_gemm_fp16_8 temp_gemm_fp16_8.cpp)
-add_example_dependencies(example_gemm_xdl temp_gemm_fp16_8)
-
-add_example_executable(temp_gemm_fp16_9 temp_gemm_fp16_9.cpp)
-add_example_dependencies(example_gemm_xdl temp_gemm_fp16_9)
+add_example_executable(gemm_fp16_9 gemm_fp16_9.cpp)
+add_example_dependencies(example_gemm_xdl gemm_fp16_9)
 
 add_example_executable(example_gemm_xdl_fp16 gemm_xdl_fp16.cpp)
 add_example_dependencies(example_gemm_xdl example_gemm_xdl_fp16)
@@ -87,6 +84,60 @@ add_example_dependencies(example_gemm_xdl example_gemm_xdl_bf16_rtn)
 add_example_executable(example_gemm_xdl_int8 gemm_xdl_int8.cpp)
 add_example_dependencies(example_gemm_xdl example_gemm_xdl_int8)
 
+add_example_executable(gemm_int8_1 gemm_int8_1.cpp)
+add_example_dependencies(example_gemm_xdl gemm_int8_1)
+
+add_example_executable(gemm_int8_2 gemm_int8_2.cpp)
+add_example_dependencies(example_gemm_xdl gemm_int8_2)
+
+add_example_executable(gemm_int8_3 gemm_int8_3.cpp)
+add_example_dependencies(example_gemm_xdl gemm_int8_3)
+
+add_example_executable(gemm_int8_1_1 gemm_int8_1_1.cpp)
+add_example_dependencies(example_gemm_xdl gemm_int8_1_1)
+
+add_example_executable(gemm_int8_1_2 gemm_int8_1_2.cpp)
+add_example_dependencies(example_gemm_xdl gemm_int8_1_2)
+
+add_example_executable(gemm_int8_1_3 gemm_int8_1_3.cpp)
+add_example_dependencies(example_gemm_xdl gemm_int8_1_3)
+
+add_example_executable(gemm_int8_2_1 gemm_int8_2_1.cpp)
+add_example_dependencies(example_gemm_xdl gemm_int8_2_1)
+
+add_example_executable(gemm_int8_2_2 gemm_int8_2_2.cpp)
+add_example_dependencies(example_gemm_xdl gemm_int8_2_2)
+
+add_example_executable(gemm_int8_2_3 gemm_int8_2_3.cpp)
+add_example_dependencies(example_gemm_xdl gemm_int8_2_3)
+
+add_example_executable(gemm_int8_3_1 gemm_int8_3_1.cpp)
+add_example_dependencies(example_gemm_xdl gemm_int8_3_1)
+
+add_example_executable(gemm_int8_3_2 gemm_int8_3_2.cpp)
+add_example_dependencies(example_gemm_xdl gemm_int8_3_2)
+
+add_example_executable(gemm_int8_3_3 gemm_int8_3_3.cpp)
+add_example_dependencies(example_gemm_xdl gemm_int8_3_3)
+
+add_example_executable(gemm_int8_4 gemm_int8_4.cpp)
+add_example_dependencies(example_gemm_xdl gemm_int8_4)
+
+add_example_executable(gemm_int8_5 gemm_int8_5.cpp)
+add_example_dependencies(example_gemm_xdl gemm_int8_5)
+
+add_example_executable(gemm_int8_6 gemm_int8_6.cpp)
+add_example_dependencies(example_gemm_xdl gemm_int8_6)
+
+add_example_executable(gemm_int8_7 gemm_int8_7.cpp)
+add_example_dependencies(example_gemm_xdl gemm_int8_7)
+
+add_example_executable(gemm_int8_8 gemm_int8_8.cpp)
+add_example_dependencies(example_gemm_xdl gemm_int8_8)
+
+add_example_executable(gemm_int8_9 gemm_int8_9.cpp)
+add_example_dependencies(example_gemm_xdl gemm_int8_9)
+
 add_example_executable(example_gemm_xdl_w8a16 gemm_xdl_w8a16.cpp)
 add_example_dependencies(example_gemm_xdl example_gemm_xdl_w8a16)
 
@@ -115,6 +166,48 @@ endforeach()
 
 add_example_executable(example_gemm_xdl_fp8 gemm_xdl_fp8.cpp)
 add_example_dependencies(example_gemm_xdl example_gemm_xdl_fp8)
+
+add_example_executable(gemm_fp8_1 gemm_fp8_1.cpp)
+add_example_dependencies(example_gemm_xdl gemm_fp8_1)
+
+add_example_executable(gemm_fp8_2 gemm_fp8_2.cpp)
+add_example_dependencies(example_gemm_xdl gemm_fp8_2)
+
+add_example_executable(gemm_fp8_3 gemm_fp8_3.cpp)
+add_example_dependencies(example_gemm_xdl gemm_fp8_3)
+
+add_example_executable(gemm_fp8_4 gemm_fp8_4.cpp)
+add_example_dependencies(example_gemm_xdl gemm_fp8_4)
+
+add_example_executable(gemm_fp8_5 gemm_fp8_5.cpp)
+add_example_dependencies(example_gemm_xdl gemm_fp8_5)
+
+add_example_executable(gemm_fp8_6 gemm_fp8_6.cpp)
+add_example_dependencies(example_gemm_xdl gemm_fp8_6)
+
+add_example_executable(gemm_fp8_7 gemm_fp8_7.cpp)
+add_example_dependencies(example_gemm_xdl gemm_fp8_7)
+
+add_example_executable(gemm_fp8_8 gemm_fp8_8.cpp)
+add_example_dependencies(example_gemm_xdl gemm_fp8_8)
+
+add_example_executable(gemm_fp8_1_1 gemm_fp8_1_1.cpp)
+add_example_dependencies(example_gemm_xdl gemm_fp8_1_1)
+
+add_example_executable(gemm_fp8_1_2 gemm_fp8_1_2.cpp)
+add_example_dependencies(example_gemm_xdl gemm_fp8_1_2)
+
+add_example_executable(gemm_fp8_2_1 gemm_fp8_2_1.cpp)
+add_example_dependencies(example_gemm_xdl gemm_fp8_2_1)
+
+add_example_executable(gemm_fp8_2_2 gemm_fp8_2_2.cpp)
+add_example_dependencies(example_gemm_xdl gemm_fp8_2_2)
+
+add_example_executable(gemm_fp8_3_1 gemm_fp8_3_1.cpp)
+add_example_dependencies(example_gemm_xdl gemm_fp8_3_1)
+
+add_example_executable(gemm_fp8_3_2 gemm_fp8_3_2.cpp)
+add_example_dependencies(example_gemm_xdl gemm_fp8_3_2)
 
 add_example_executable(example_gemm_xdl_fp8_bf8 gemm_xdl_fp8_bf8.cpp)
 add_example_dependencies(example_gemm_xdl example_gemm_xdl_fp8_bf8)
