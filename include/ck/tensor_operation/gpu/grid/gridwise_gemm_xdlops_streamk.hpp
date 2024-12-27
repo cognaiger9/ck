@@ -1167,15 +1167,28 @@ struct GridwiseGemm_bk0mk1_bk0nk1_mn_xdlops_streamk
             << std::string(ALayout::name)[0]
             << std::string(BLayout::name)[0]
             << std::string(CLayout::name)[0]
-            << "_"
-            << "B" << BlockSize << "_"
-            << "Vec" << ABlockTransferSrcScalarPerVector << "x"
-            << BBlockTransferSrcScalarPerVector << "x"
-            << CBlockTransferScalarPerVector_NWaveNPerXDL << "_"
-            << MPerBlock << "x"
-            << NPerBlock << "x"
-            << K0PerBlock << "x"
-            << K1 ;
+            << "<"
+            << BlockSize << ", "
+            << MPerBlock << ", "
+            << NPerBlock << ", "
+            << K0PerBlock << ", "
+            << K1Value << ", "
+            << MPerXDL << ", "
+            << NPerXDL << ", "
+            << MRepeat << ", "
+            << NRepeat << ", "
+            << ABlockTransferSrcVectorDim << ", "
+            << ABlockTransferSrcScalarPerVector << ", "
+            << ABlockTransferDstScalarPerVector_K1 << ", "
+            << ABlockLdsExtraM << ", "
+            << BBlockTransferSrcVectorDim << ", "
+            << BBlockTransferSrcScalarPerVector << ", "
+            << BBlockTransferDstScalarPerVector_K1 << ", "
+            << BBlockLdsExtraN << ", "
+            << CShuffleMRepeatPerShuffle << ", "
+            << CShuffleNRepeatPerShuffle << ", "
+            << CBlockTransferScalarPerVector_NWaveNPerXDL
+            << ">";
         // clang-format on
 
         return str.str();

@@ -23,9 +23,9 @@ struct FillUniformDistribution
     std::optional<uint32_t> seed_{11939};
 
     template <typename ForwardIter>
-    void operator()(ForwardIter first, ForwardIter last) const
+    void operator()(ForwardIter first, ForwardIter last, std::mt19937& gen) const
     {
-        std::mt19937 gen(seed_.has_value() ? *seed_ : std::random_device{}());
+        //std::mt19937 gen(seed_.has_value() ? *seed_ : std::random_device{}());
         std::uniform_real_distribution<float> dis(a_, b_);
         std::generate(first, last, [&dis, &gen]() { return ck_tile::type_convert<T>(dis(gen)); });
     }
@@ -36,8 +36,10 @@ struct FillUniformDistribution
             std::begin(std::forward<ForwardRange>(range)),
             std::end(std::forward<ForwardRange>(range))))>
     {
+        std::mt19937 gen(seed_.has_value() ? *seed_ : std::random_device{}());
         (*this)(std::begin(std::forward<ForwardRange>(range)),
-                std::end(std::forward<ForwardRange>(range)));
+                std::end(std::forward<ForwardRange>(range)),
+                gen);
     }
 };
 

@@ -7,9 +7,9 @@ OUT_TEXT_DIR="../tunning_output"
 SOURCE_FILE="../example/01_gemm/gemm_fp16.cpp"
 
 # Variable
-M=11776
-N=6144
-K=1536
+M=216000
+N=4608
+K=1152
 TYPE="fp16"
 PARTITION=1
 GPU="mi300"
@@ -31,11 +31,11 @@ CMPS=(2)
 CSPS=(2 4 8)
 BK1=(2 4)
 
-MPB=(256 128)
+MPB=(256)
 NPB=(128)
 KPB=(64 32)
 RES=(2)
-MXPW=(4 2)
+MXPW=(4)
 NXPW=(2)
 
 for mpb in "${MPB[@]}"; do
@@ -75,7 +75,7 @@ for mpb in "${MPB[@]}"; do
                                                                 
                                                                 # Run executable
                                                                 # row row row
-                                                                ../build/bin/$EXE_FILE 1 0 1 ${M} ${N} ${K} ${K} ${N} ${N} >> "${OUTPUT_FILE}"
+                                                                ../build/bin/$EXE_FILE 1 2 1 ${M} ${N} ${K} ${K} ${N} ${N} >> "${OUTPUT_FILE}"
                                                                 rm ../build/bin/$EXE_FILE
                                                             done
                                                         done

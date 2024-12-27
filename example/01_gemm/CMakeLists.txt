@@ -19,6 +19,9 @@ add_custom_target(example_gemm_xdl)
 add_example_executable(gemm_fp16 gemm_fp16.cpp)
 add_example_dependencies(example_gemm_xdl gemm_fp16)
 
+add_example_executable(gemm_fp16_rcr gemm_fp16_rcr.cpp)
+add_example_dependencies(example_gemm_xdl gemm_fp16_rcr)
+
 add_example_executable(gemm_fp16_1 gemm_fp16_1.cpp)
 add_example_dependencies(example_gemm_xdl gemm_fp16_1)
 
@@ -58,6 +61,10 @@ add_example_dependencies(example_gemm_xdl temp_gemm_tuner)
 add_example_executable(example_gemm_xdl_fp16_v2 gemm_xdl_fp16_v2.cpp)
 add_example_dependencies(example_gemm_xdl example_gemm_xdl_fp16_v2)
 
+add_example_executable(fp16_v2_1 fp16_v2_1.cpp)
+add_example_executable(fp16_v2_2 fp16_v2_2.cpp)
+add_example_executable(fp16_v2_3 fp16_v2_3.cpp)
+
 add_example_executable(example_gemm_xdl_fp16_streamk_v3 gemm_xdl_fp16_streamk_v3.cpp)
 add_example_dependencies(example_gemm_xdl example_gemm_xdl_fp16_streamk_v3)
 add_example_executable(example_gemm_xdl_fp16_v3 gemm_xdl_fp16_v3.cpp)
@@ -80,6 +87,9 @@ add_example_dependencies(example_gemm_xdl example_gemm_xdl_bf16)
 
 add_example_executable(example_gemm_xdl_bf16_rtn gemm_xdl_bf16_rtn.cpp)
 add_example_dependencies(example_gemm_xdl example_gemm_xdl_bf16_rtn)
+
+add_example_executable(gemm_int8_rrr gemm_int8_rrr.cpp)
+add_example_dependencies(example_gemm_xdl gemm_int8_rrr)
 
 add_example_executable(example_gemm_xdl_int8 gemm_xdl_int8.cpp)
 add_example_dependencies(example_gemm_xdl example_gemm_xdl_int8)
@@ -151,6 +161,10 @@ add_example_dependencies(example_gemm_xdl example_gemm_xdl_fp64)
 
 add_example_executable(example_gemm_xdl_streamk gemm_xdl_streamk.cpp)
 
+add_example_executable(streamk_1 streamk_1.cpp)
+add_example_executable(streamk_2 streamk_2.cpp)
+add_example_executable(streamk_3 streamk_3.cpp)
+
 list(APPEND gpu_list gfx90a gfx940 gfx941 gfx942)
 set(target 0)
 foreach(gpu IN LISTS GPU_TARGETS)
@@ -166,6 +180,9 @@ endforeach()
 
 add_example_executable(example_gemm_xdl_fp8 gemm_xdl_fp8.cpp)
 add_example_dependencies(example_gemm_xdl example_gemm_xdl_fp8)
+
+add_example_executable(gemm_fp8_rrr gemm_fp8_rrr.cpp)
+add_example_dependencies(example_gemm_xdl gemm_fp8_rrr)
 
 add_example_executable(gemm_fp8_1 gemm_fp8_1.cpp)
 add_example_dependencies(example_gemm_xdl gemm_fp8_1)

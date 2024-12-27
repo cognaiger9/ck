@@ -22,7 +22,7 @@ using AElementOp = PassThrough;
 using BElementOp = PassThrough;
 using CElementOp = PassThrough;
 
-static constexpr auto GemmDefault = ck::tensor_operation::device::GemmSpecialization::Default;
+static constexpr auto GemmDefault = ck::tensor_operation::device::GemmSpecialization::MPadding;
 
 // clang-format off
 using DeviceGemmInstance = 
@@ -30,7 +30,7 @@ using DeviceGemmInstance =
         ALayout,   BLayout,  CLayout,   
         F16,   F16,  F16,  F32,  F16, 
         PassThrough, PassThrough, PassThrough, GemmDefault, 
-        2,   256,
+        1,   256,
         256, 256, 
         32, 8, 4,
         32,   32,
@@ -39,7 +39,7 @@ using DeviceGemmInstance =
         2, 8, 8, 0,
         S<8, 32, 1>,  S<0, 2, 1>,  S<0, 2, 1>,
         1, 8, 4, 0,
-        1, 1, S<1, 32, 1, 8>, 8,
+        2, 1, S<1, 32, 1, 8>, 8,
         ck::LoopScheduler::Default, ck::PipelineVersion::v1>;
 // clang-format on
 

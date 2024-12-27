@@ -25,8 +25,9 @@ struct FillUniformDistribution
     void operator()(ForwardIter first, ForwardIter last) const
     {
         std::mt19937 gen(11939);
+        std::minstd_rand fast_gen(11939);
         std::uniform_real_distribution<float> dis(a_, b_);
-        std::generate(first, last, [&dis, &gen]() { return ck::type_convert<T>(dis(gen)); });
+        std::generate(first, last, [&dis, &fast_gen]() { return ck::type_convert<T>(dis(fast_gen)); });
     }
 
     template <typename ForwardRange>
