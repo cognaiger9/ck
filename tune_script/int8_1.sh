@@ -7,9 +7,9 @@ OUT_TEXT_DIR="../tunning_output"
 SOURCE_FILE="../example/01_gemm/gemm_int8.cpp"
 
 # Variable
-M=432000
-N=4608
-K=1152
+M=4096
+N=4096
+K=4096
 TYPE="int8"
 PARTITION=1
 GPU="mi300"

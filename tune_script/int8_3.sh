@@ -1,5 +1,5 @@
 #!/bin/bash
-export ROCR_VISIBLE_DEVICES=3
+export ROCR_VISIBLE_DEVICES=4
 
 # Fixed path
 OUT_TEXT_DIR="../tunning_output"
@@ -7,9 +7,9 @@ OUT_TEXT_DIR="../tunning_output"
 SOURCE_FILE="../example/01_gemm/gemm_int8.cpp"
 
 # Variable
-M=216000
-N=4608
-K=2304
+M=2048
+N=2048
+K=2048
 TYPE="int8"
 PARTITION=3
 GPU="mi300"

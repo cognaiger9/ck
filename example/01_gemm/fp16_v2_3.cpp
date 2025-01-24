@@ -1,5 +1,4 @@
-// SPDX-License-Identifier: MIT
-// Copyright (c) 2018-2024, Advanced Micro Devices, Inc. All rights reserved.
+// This file serves as a template to replace parameters
 
 #include "common.hpp"
 
@@ -31,15 +30,15 @@ using DeviceGemmInstance =
         F16,   F16,  F16,  F32,  F16, 
         PassThrough, PassThrough, PassThrough, GemmDefault, 
         2,   256,
-        256, 128,
+        256, 256,
         32, 8, 4,
         32, 32,
-        4,  2, 
+        4,  4, 
         S<4, 64, 1>,  S<1, 0, 2>,  S<1, 0, 2>, 
-        2, 4, 8, 0,
+        2, 8, 8, 0,
         S<8, 32, 1>,  S<0, 2, 1>,  S<0, 2, 1>,
-        2, 4, 4, 1,
-        2, 1, S<1, 32, 1, 8>, 4,
+        1, 2, 2, 0,
+        1, 1, S<1, 32, 1, 8>, 8,
         ck::LoopScheduler::Default, ck::PipelineVersion::v1>;
 // clang-format on
 

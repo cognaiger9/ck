@@ -7,9 +7,9 @@ OUT_TEXT_DIR="../tunning_output"
 SOURCE_FILE="../example/01_gemm/fp16_v2.cpp"
 
 # Variable
-M=216000
-N=9216
-K=1152
+M=8192
+N=8192
+K=8192
 TYPE="fp16"
 ALGO="v2"
 PARTITION=2

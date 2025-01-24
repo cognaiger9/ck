@@ -1,0 +1,354 @@
+a_m_k: dim 2, lengths {4096, 4096}, strides {4096, 1}
+b_k_n: dim 2, lengths {4096, 4096}, strides {1, 4096}
+c_m_n: dim 2, lengths {4096, 4096}, strides {4096, 1}
+Perf: 0.222571 ms, 617.506 TFlops, 226.138 GB/s, DeviceGemm_Xdl_CShuffle<MPadding, 1, 256, 128, 128, 64, 16, 16, 32, 32, 2, 2, <4, 64, 1>, <1, 0, 2>, <1, 0, 2>, 2, 16, 16, 1, <4, 64, 1>, <1, 0, 2>, <1, 0, 2>, 2, 8, 8, 1, 2, 1, <1, 64, 1, 4>, 16, > LoopScheduler: Default, PipelineVersion: v1
+Running verification on GPU.
+1
+a_m_k: dim 2, lengths {4096, 4096}, strides {4096, 1}
+b_k_n: dim 2, lengths {4096, 4096}, strides {1, 4096}
+c_m_n: dim 2, lengths {4096, 4096}, strides {4096, 1}
+Perf: 0.222701 ms, 617.146 TFlops, 226.006 GB/s, DeviceGemm_Xdl_CShuffle<MPadding, 1, 256, 128, 128, 64, 16, 16, 32, 32, 2, 2, <4, 64, 1>, <1, 0, 2>, <1, 0, 2>, 2, 16, 16, 1, <4, 64, 1>, <1, 0, 2>, <1, 0, 2>, 2, 8, 8, 1, 2, 1, <1, 64, 1, 4>, 8, > LoopScheduler: Default, PipelineVersion: v1
+Running verification on GPU.
+1
+a_m_k: dim 2, lengths {4096, 4096}, strides {4096, 1}
+b_k_n: dim 2, lengths {4096, 4096}, strides {1, 4096}
+c_m_n: dim 2, lengths {4096, 4096}, strides {4096, 1}
+Perf: 0.224721 ms, 611.599 TFlops, 223.974 GB/s, DeviceGemm_Xdl_CShuffle<MPadding, 1, 256, 128, 128, 64, 16, 16, 32, 32, 2, 2, <4, 64, 1>, <1, 0, 2>, <1, 0, 2>, 2, 16, 16, 1, <4, 64, 1>, <1, 0, 2>, <1, 0, 2>, 2, 8, 8, 0, 2, 1, <1, 64, 1, 4>, 16, > LoopScheduler: Default, PipelineVersion: v1
+Running verification on GPU.
+1
+a_m_k: dim 2, lengths {4096, 4096}, strides {4096, 1}
+b_k_n: dim 2, lengths {4096, 4096}, strides {1, 4096}
+c_m_n: dim 2, lengths {4096, 4096}, strides {4096, 1}
+Perf: 0.224703 ms, 611.647 TFlops, 223.992 GB/s, DeviceGemm_Xdl_CShuffle<MPadding, 1, 256, 128, 128, 64, 16, 16, 32, 32, 2, 2, <4, 64, 1>, <1, 0, 2>, <1, 0, 2>, 2, 16, 16, 1, <4, 64, 1>, <1, 0, 2>, <1, 0, 2>, 2, 8, 8, 0, 2, 1, <1, 64, 1, 4>, 8, > LoopScheduler: Default, PipelineVersion: v1
+Running verification on GPU.
+1
+a_m_k: dim 2, lengths {4096, 4096}, strides {4096, 1}
+b_k_n: dim 2, lengths {4096, 4096}, strides {1, 4096}
+c_m_n: dim 2, lengths {4096, 4096}, strides {4096, 1}
+Perf: 0.221856 ms, 619.496 TFlops, 226.866 GB/s, DeviceGemm_Xdl_CShuffle<MPadding, 1, 256, 128, 128, 64, 16, 16, 32, 32, 2, 2, <4, 64, 1>, <1, 0, 2>, <1, 0, 2>, 2, 16, 16, 1, <4, 64, 1>, <1, 0, 2>, <1, 0, 2>, 2, 8, 4, 1, 2, 1, <1, 64, 1, 4>, 16, > LoopScheduler: Default, PipelineVersion: v1
+Running verification on GPU.
+1
+a_m_k: dim 2, lengths {4096, 4096}, strides {4096, 1}
+b_k_n: dim 2, lengths {4096, 4096}, strides {1, 4096}
+c_m_n: dim 2, lengths {4096, 4096}, strides {4096, 1}
+Perf: 0.223242 ms, 615.65 TFlops, 225.458 GB/s, DeviceGemm_Xdl_CShuffle<MPadding, 1, 256, 128, 128, 64, 16, 16, 32, 32, 2, 2, <4, 64, 1>, <1, 0, 2>, <1, 0, 2>, 2, 16, 16, 1, <4, 64, 1>, <1, 0, 2>, <1, 0, 2>, 2, 8, 4, 1, 2, 1, <1, 64, 1, 4>, 8, > LoopScheduler: Default, PipelineVersion: v1
+Running verification on GPU.
+1
+a_m_k: dim 2, lengths {4096, 4096}, strides {4096, 1}
+b_k_n: dim 2, lengths {4096, 4096}, strides {1, 4096}
+c_m_n: dim 2, lengths {4096, 4096}, strides {4096, 1}
+Perf: 0.223759 ms, 614.229 TFlops, 224.937 GB/s, DeviceGemm_Xdl_CShuffle<MPadding, 1, 256, 128, 128, 64, 16, 16, 32, 32, 2, 2, <4, 64, 1>, <1, 0, 2>, <1, 0, 2>, 2, 16, 16, 1, <4, 64, 1>, <1, 0, 2>, <1, 0, 2>, 2, 8, 4, 0, 2, 1, <1, 64, 1, 4>, 16, > LoopScheduler: Default, PipelineVersion: v1
+Running verification on GPU.
+1
+a_m_k: dim 2, lengths {4096, 4096}, strides {4096, 1}
+b_k_n: dim 2, lengths {4096, 4096}, strides {1, 4096}
+c_m_n: dim 2, lengths {4096, 4096}, strides {4096, 1}
+Perf: 0.226102 ms, 607.864 TFlops, 222.606 GB/s, DeviceGemm_Xdl_CShuffle<MPadding, 1, 256, 128, 128, 64, 16, 16, 32, 32, 2, 2, <4, 64, 1>, <1, 0, 2>, <1, 0, 2>, 2, 16, 16, 1, <4, 64, 1>, <1, 0, 2>, <1, 0, 2>, 2, 8, 4, 0, 2, 1, <1, 64, 1, 4>, 8, > LoopScheduler: Default, PipelineVersion: v1
+Running verification on GPU.
+1
+a_m_k: dim 2, lengths {4096, 4096}, strides {4096, 1}
+b_k_n: dim 2, lengths {4096, 4096}, strides {1, 4096}
+c_m_n: dim 2, lengths {4096, 4096}, strides {4096, 1}
+Perf: 0.291894 ms, 470.853 TFlops, 172.431 GB/s, DeviceGemm_Xdl_CShuffle<MPadding, 1, 256, 128, 128, 64, 16, 16, 32, 32, 2, 2, <4, 64, 1>, <1, 0, 2>, <1, 0, 2>, 2, 16, 16, 1, <4, 64, 1>, <1, 0, 2>, <1, 0, 2>, 2, 4, 8, 1, 2, 1, <1, 64, 1, 4>, 16, > LoopScheduler: Default, PipelineVersion: v1
+Running verification on GPU.
+1
+a_m_k: dim 2, lengths {4096, 4096}, strides {4096, 1}
+b_k_n: dim 2, lengths {4096, 4096}, strides {1, 4096}
+c_m_n: dim 2, lengths {4096, 4096}, strides {4096, 1}
+Perf: 0.293297 ms, 468.601 TFlops, 171.607 GB/s, DeviceGemm_Xdl_CShuffle<MPadding, 1, 256, 128, 128, 64, 16, 16, 32, 32, 2, 2, <4, 64, 1>, <1, 0, 2>, <1, 0, 2>, 2, 16, 16, 1, <4, 64, 1>, <1, 0, 2>, <1, 0, 2>, 2, 4, 8, 1, 2, 1, <1, 64, 1, 4>, 8, > LoopScheduler: Default, PipelineVersion: v1
+Running verification on GPU.
+1
+a_m_k: dim 2, lengths {4096, 4096}, strides {4096, 1}
+b_k_n: dim 2, lengths {4096, 4096}, strides {1, 4096}
+c_m_n: dim 2, lengths {4096, 4096}, strides {4096, 1}
+Perf: 0.290711 ms, 472.768 TFlops, 173.133 GB/s, DeviceGemm_Xdl_CShuffle<MPadding, 1, 256, 128, 128, 64, 16, 16, 32, 32, 2, 2, <4, 64, 1>, <1, 0, 2>, <1, 0, 2>, 2, 16, 16, 1, <4, 64, 1>, <1, 0, 2>, <1, 0, 2>, 2, 4, 8, 0, 2, 1, <1, 64, 1, 4>, 16, > LoopScheduler: Default, PipelineVersion: v1
+Running verification on GPU.
+1
+a_m_k: dim 2, lengths {4096, 4096}, strides {4096, 1}
+b_k_n: dim 2, lengths {4096, 4096}, strides {1, 4096}
+c_m_n: dim 2, lengths {4096, 4096}, strides {4096, 1}
+Perf: 0.292375 ms, 470.077 TFlops, 172.147 GB/s, DeviceGemm_Xdl_CShuffle<MPadding, 1, 256, 128, 128, 64, 16, 16, 32, 32, 2, 2, <4, 64, 1>, <1, 0, 2>, <1, 0, 2>, 2, 16, 16, 1, <4, 64, 1>, <1, 0, 2>, <1, 0, 2>, 2, 4, 8, 0, 2, 1, <1, 64, 1, 4>, 8, > LoopScheduler: Default, PipelineVersion: v1
+Running verification on GPU.
+1
+a_m_k: dim 2, lengths {4096, 4096}, strides {4096, 1}
+b_k_n: dim 2, lengths {4096, 4096}, strides {1, 4096}
+c_m_n: dim 2, lengths {4096, 4096}, strides {4096, 1}
+Perf: 0.292054 ms, 470.595 TFlops, 172.337 GB/s, DeviceGemm_Xdl_CShuffle<MPadding, 1, 256, 128, 128, 64, 16, 16, 32, 32, 2, 2, <4, 64, 1>, <1, 0, 2>, <1, 0, 2>, 2, 16, 16, 1, <4, 64, 1>, <1, 0, 2>, <1, 0, 2>, 2, 4, 4, 1, 2, 1, <1, 64, 1, 4>, 16, > LoopScheduler: Default, PipelineVersion: v1
+Running verification on GPU.
+1
+a_m_k: dim 2, lengths {4096, 4096}, strides {4096, 1}
+b_k_n: dim 2, lengths {4096, 4096}, strides {1, 4096}
+c_m_n: dim 2, lengths {4096, 4096}, strides {4096, 1}
+Perf: 0.291276 ms, 471.851 TFlops, 172.797 GB/s, DeviceGemm_Xdl_CShuffle<MPadding, 1, 256, 128, 128, 64, 16, 16, 32, 32, 2, 2, <4, 64, 1>, <1, 0, 2>, <1, 0, 2>, 2, 16, 16, 1, <4, 64, 1>, <1, 0, 2>, <1, 0, 2>, 2, 4, 4, 1, 2, 1, <1, 64, 1, 4>, 8, > LoopScheduler: Default, PipelineVersion: v1
+Running verification on GPU.
+1
+a_m_k: dim 2, lengths {4096, 4096}, strides {4096, 1}
+b_k_n: dim 2, lengths {4096, 4096}, strides {1, 4096}
+c_m_n: dim 2, lengths {4096, 4096}, strides {4096, 1}
+Perf: 0.291223 ms, 471.938 TFlops, 172.829 GB/s, DeviceGemm_Xdl_CShuffle<MPadding, 1, 256, 128, 128, 64, 16, 16, 32, 32, 2, 2, <4, 64, 1>, <1, 0, 2>, <1, 0, 2>, 2, 16, 16, 1, <4, 64, 1>, <1, 0, 2>, <1, 0, 2>, 2, 4, 4, 0, 2, 1, <1, 64, 1, 4>, 16, > LoopScheduler: Default, PipelineVersion: v1
+Running verification on GPU.
+1
+a_m_k: dim 2, lengths {4096, 4096}, strides {4096, 1}
+b_k_n: dim 2, lengths {4096, 4096}, strides {1, 4096}
+c_m_n: dim 2, lengths {4096, 4096}, strides {4096, 1}
+Perf: 0.293092 ms, 468.927 TFlops, 171.726 GB/s, DeviceGemm_Xdl_CShuffle<MPadding, 1, 256, 128, 128, 64, 16, 16, 32, 32, 2, 2, <4, 64, 1>, <1, 0, 2>, <1, 0, 2>, 2, 16, 16, 1, <4, 64, 1>, <1, 0, 2>, <1, 0, 2>, 2, 4, 4, 0, 2, 1, <1, 64, 1, 4>, 8, > LoopScheduler: Default, PipelineVersion: v1
+Running verification on GPU.
+1
+a_m_k: dim 2, lengths {4096, 4096}, strides {4096, 1}
+b_k_n: dim 2, lengths {4096, 4096}, strides {1, 4096}
+c_m_n: dim 2, lengths {4096, 4096}, strides {4096, 1}
+Perf: 1.12555 ms, 122.108 TFlops, 44.7172 GB/s, DeviceGemm_Xdl_CShuffle<MPadding, 1, 256, 128, 128, 64, 16, 16, 32, 32, 2, 2, <4, 64, 1>, <1, 0, 2>, <1, 0, 2>, 2, 16, 16, 1, <4, 64, 1>, <1, 0, 2>, <1, 0, 2>, 3, 8, 8, 1, 2, 1, <1, 64, 1, 4>, 16, > LoopScheduler: Default, PipelineVersion: v1
+Running verification on GPU.
+0
+a_m_k: dim 2, lengths {4096, 4096}, strides {4096, 1}
+b_k_n: dim 2, lengths {4096, 4096}, strides {1, 4096}
+c_m_n: dim 2, lengths {4096, 4096}, strides {4096, 1}
+Perf: 1.12681 ms, 121.972 TFlops, 44.6675 GB/s, DeviceGemm_Xdl_CShuffle<MPadding, 1, 256, 128, 128, 64, 16, 16, 32, 32, 2, 2, <4, 64, 1>, <1, 0, 2>, <1, 0, 2>, 2, 16, 16, 1, <4, 64, 1>, <1, 0, 2>, <1, 0, 2>, 3, 8, 8, 1, 2, 1, <1, 64, 1, 4>, 8, > LoopScheduler: Default, PipelineVersion: v1
+Running verification on GPU.
+0
+a_m_k: dim 2, lengths {4096, 4096}, strides {4096, 1}
+b_k_n: dim 2, lengths {4096, 4096}, strides {1, 4096}
+c_m_n: dim 2, lengths {4096, 4096}, strides {4096, 1}
+Perf: 1.12561 ms, 122.102 TFlops, 44.7151 GB/s, DeviceGemm_Xdl_CShuffle<MPadding, 1, 256, 128, 128, 64, 16, 16, 32, 32, 2, 2, <4, 64, 1>, <1, 0, 2>, <1, 0, 2>, 2, 16, 16, 1, <4, 64, 1>, <1, 0, 2>, <1, 0, 2>, 3, 8, 8, 0, 2, 1, <1, 64, 1, 4>, 16, > LoopScheduler: Default, PipelineVersion: v1
+Running verification on GPU.
+0
+a_m_k: dim 2, lengths {4096, 4096}, strides {4096, 1}
+b_k_n: dim 2, lengths {4096, 4096}, strides {1, 4096}
+c_m_n: dim 2, lengths {4096, 4096}, strides {4096, 1}
+Perf: 1.12685 ms, 121.968 TFlops, 44.6659 GB/s, DeviceGemm_Xdl_CShuffle<MPadding, 1, 256, 128, 128, 64, 16, 16, 32, 32, 2, 2, <4, 64, 1>, <1, 0, 2>, <1, 0, 2>, 2, 16, 16, 1, <4, 64, 1>, <1, 0, 2>, <1, 0, 2>, 3, 8, 8, 0, 2, 1, <1, 64, 1, 4>, 8, > LoopScheduler: Default, PipelineVersion: v1
+Running verification on GPU.
+0
+a_m_k: dim 2, lengths {4096, 4096}, strides {4096, 1}
+b_k_n: dim 2, lengths {4096, 4096}, strides {1, 4096}
+c_m_n: dim 2, lengths {4096, 4096}, strides {4096, 1}
+Perf: 1.12512 ms, 122.155 TFlops, 44.7345 GB/s, DeviceGemm_Xdl_CShuffle<MPadding, 1, 256, 128, 128, 64, 16, 16, 32, 32, 2, 2, <4, 64, 1>, <1, 0, 2>, <1, 0, 2>, 2, 16, 16, 1, <4, 64, 1>, <1, 0, 2>, <1, 0, 2>, 3, 8, 4, 1, 2, 1, <1, 64, 1, 4>, 16, > LoopScheduler: Default, PipelineVersion: v1
+Running verification on GPU.
+0
+a_m_k: dim 2, lengths {4096, 4096}, strides {4096, 1}
+b_k_n: dim 2, lengths {4096, 4096}, strides {1, 4096}
+c_m_n: dim 2, lengths {4096, 4096}, strides {4096, 1}
+Perf: 1.12721 ms, 121.929 TFlops, 44.6516 GB/s, DeviceGemm_Xdl_CShuffle<MPadding, 1, 256, 128, 128, 64, 16, 16, 32, 32, 2, 2, <4, 64, 1>, <1, 0, 2>, <1, 0, 2>, 2, 16, 16, 1, <4, 64, 1>, <1, 0, 2>, <1, 0, 2>, 3, 8, 4, 1, 2, 1, <1, 64, 1, 4>, 8, > LoopScheduler: Default, PipelineVersion: v1
+Running verification on GPU.
+0
+a_m_k: dim 2, lengths {4096, 4096}, strides {4096, 1}
+b_k_n: dim 2, lengths {4096, 4096}, strides {1, 4096}
+c_m_n: dim 2, lengths {4096, 4096}, strides {4096, 1}
+Perf: 1.12754 ms, 121.892 TFlops, 44.6384 GB/s, DeviceGemm_Xdl_CShuffle<MPadding, 1, 256, 128, 128, 64, 16, 16, 32, 32, 2, 2, <4, 64, 1>, <1, 0, 2>, <1, 0, 2>, 2, 16, 16, 1, <4, 64, 1>, <1, 0, 2>, <1, 0, 2>, 3, 8, 4, 0, 2, 1, <1, 64, 1, 4>, 16, > LoopScheduler: Default, PipelineVersion: v1
+Running verification on GPU.
+0
+a_m_k: dim 2, lengths {4096, 4096}, strides {4096, 1}
+b_k_n: dim 2, lengths {4096, 4096}, strides {1, 4096}
+c_m_n: dim 2, lengths {4096, 4096}, strides {4096, 1}
+Perf: 1.12828 ms, 121.812 TFlops, 44.609 GB/s, DeviceGemm_Xdl_CShuffle<MPadding, 1, 256, 128, 128, 64, 16, 16, 32, 32, 2, 2, <4, 64, 1>, <1, 0, 2>, <1, 0, 2>, 2, 16, 16, 1, <4, 64, 1>, <1, 0, 2>, <1, 0, 2>, 3, 8, 4, 0, 2, 1, <1, 64, 1, 4>, 8, > LoopScheduler: Default, PipelineVersion: v1
+Running verification on GPU.
+0
+a_m_k: dim 2, lengths {4096, 4096}, strides {4096, 1}
+b_k_n: dim 2, lengths {4096, 4096}, strides {1, 4096}
+c_m_n: dim 2, lengths {4096, 4096}, strides {4096, 1}
+Perf: 1.14055 ms, 120.502 TFlops, 44.1292 GB/s, DeviceGemm_Xdl_CShuffle<MPadding, 1, 256, 128, 128, 64, 16, 16, 32, 32, 2, 2, <4, 64, 1>, <1, 0, 2>, <1, 0, 2>, 2, 16, 16, 1, <4, 64, 1>, <1, 0, 2>, <1, 0, 2>, 3, 4, 8, 1, 2, 1, <1, 64, 1, 4>, 16, > LoopScheduler: Default, PipelineVersion: v1
+Running verification on GPU.
+0
+a_m_k: dim 2, lengths {4096, 4096}, strides {4096, 1}
+b_k_n: dim 2, lengths {4096, 4096}, strides {1, 4096}
+c_m_n: dim 2, lengths {4096, 4096}, strides {4096, 1}
+Perf: 1.13976 ms, 120.586 TFlops, 44.1598 GB/s, DeviceGemm_Xdl_CShuffle<MPadding, 1, 256, 128, 128, 64, 16, 16, 32, 32, 2, 2, <4, 64, 1>, <1, 0, 2>, <1, 0, 2>, 2, 16, 16, 1, <4, 64, 1>, <1, 0, 2>, <1, 0, 2>, 3, 4, 8, 1, 2, 1, <1, 64, 1, 4>, 8, > LoopScheduler: Default, PipelineVersion: v1
+Running verification on GPU.
+0
+a_m_k: dim 2, lengths {4096, 4096}, strides {4096, 1}
+b_k_n: dim 2, lengths {4096, 4096}, strides {1, 4096}
+c_m_n: dim 2, lengths {4096, 4096}, strides {4096, 1}
+Perf: 1.13259 ms, 121.35 TFlops, 44.4395 GB/s, DeviceGemm_Xdl_CShuffle<MPadding, 1, 256, 128, 128, 64, 16, 16, 32, 32, 2, 2, <4, 64, 1>, <1, 0, 2>, <1, 0, 2>, 2, 16, 16, 1, <4, 64, 1>, <1, 0, 2>, <1, 0, 2>, 3, 4, 8, 0, 2, 1, <1, 64, 1, 4>, 16, > LoopScheduler: Default, PipelineVersion: v1
+Running verification on GPU.
+0
+a_m_k: dim 2, lengths {4096, 4096}, strides {4096, 1}
+b_k_n: dim 2, lengths {4096, 4096}, strides {1, 4096}
+c_m_n: dim 2, lengths {4096, 4096}, strides {4096, 1}
+Perf: 1.13409 ms, 121.189 TFlops, 44.3806 GB/s, DeviceGemm_Xdl_CShuffle<MPadding, 1, 256, 128, 128, 64, 16, 16, 32, 32, 2, 2, <4, 64, 1>, <1, 0, 2>, <1, 0, 2>, 2, 16, 16, 1, <4, 64, 1>, <1, 0, 2>, <1, 0, 2>, 3, 4, 8, 0, 2, 1, <1, 64, 1, 4>, 8, > LoopScheduler: Default, PipelineVersion: v1
+Running verification on GPU.
+0
+a_m_k: dim 2, lengths {4096, 4096}, strides {4096, 1}
+b_k_n: dim 2, lengths {4096, 4096}, strides {1, 4096}
+c_m_n: dim 2, lengths {4096, 4096}, strides {4096, 1}
+Perf: 1.12745 ms, 121.903 TFlops, 44.642 GB/s, DeviceGemm_Xdl_CShuffle<MPadding, 1, 256, 128, 128, 64, 16, 16, 32, 32, 2, 2, <4, 64, 1>, <1, 0, 2>, <1, 0, 2>, 2, 16, 16, 1, <4, 64, 1>, <1, 0, 2>, <1, 0, 2>, 3, 4, 4, 1, 2, 1, <1, 64, 1, 4>, 16, > LoopScheduler: Default, PipelineVersion: v1
+Running verification on GPU.
+0
+a_m_k: dim 2, lengths {4096, 4096}, strides {4096, 1}
+b_k_n: dim 2, lengths {4096, 4096}, strides {1, 4096}
+c_m_n: dim 2, lengths {4096, 4096}, strides {4096, 1}
+Perf: 1.12878 ms, 121.758 TFlops, 44.5893 GB/s, DeviceGemm_Xdl_CShuffle<MPadding, 1, 256, 128, 128, 64, 16, 16, 32, 32, 2, 2, <4, 64, 1>, <1, 0, 2>, <1, 0, 2>, 2, 16, 16, 1, <4, 64, 1>, <1, 0, 2>, <1, 0, 2>, 3, 4, 4, 1, 2, 1, <1, 64, 1, 4>, 8, > LoopScheduler: Default, PipelineVersion: v1
+Running verification on GPU.
+0
+a_m_k: dim 2, lengths {4096, 4096}, strides {4096, 1}
+b_k_n: dim 2, lengths {4096, 4096}, strides {1, 4096}
+c_m_n: dim 2, lengths {4096, 4096}, strides {4096, 1}
+Perf: 1.13544 ms, 121.044 TFlops, 44.3277 GB/s, DeviceGemm_Xdl_CShuffle<MPadding, 1, 256, 128, 128, 64, 16, 16, 32, 32, 2, 2, <4, 64, 1>, <1, 0, 2>, <1, 0, 2>, 2, 16, 16, 1, <4, 64, 1>, <1, 0, 2>, <1, 0, 2>, 3, 4, 4, 0, 2, 1, <1, 64, 1, 4>, 16, > LoopScheduler: Default, PipelineVersion: v1
+Running verification on GPU.
+0
+a_m_k: dim 2, lengths {4096, 4096}, strides {4096, 1}
+b_k_n: dim 2, lengths {4096, 4096}, strides {1, 4096}
+c_m_n: dim 2, lengths {4096, 4096}, strides {4096, 1}
+Perf: 1.1369 ms, 120.89 TFlops, 44.2711 GB/s, DeviceGemm_Xdl_CShuffle<MPadding, 1, 256, 128, 128, 64, 16, 16, 32, 32, 2, 2, <4, 64, 1>, <1, 0, 2>, <1, 0, 2>, 2, 16, 16, 1, <4, 64, 1>, <1, 0, 2>, <1, 0, 2>, 3, 4, 4, 0, 2, 1, <1, 64, 1, 4>, 8, > LoopScheduler: Default, PipelineVersion: v1
+Running verification on GPU.
+0
+a_m_k: dim 2, lengths {4096, 4096}, strides {4096, 1}
+b_k_n: dim 2, lengths {4096, 4096}, strides {1, 4096}
+c_m_n: dim 2, lengths {4096, 4096}, strides {4096, 1}
+Perf: 0.227347 ms, 604.534 TFlops, 221.387 GB/s, DeviceGemm_Xdl_CShuffle<MPadding, 1, 256, 128, 128, 64, 16, 16, 32, 32, 2, 2, <4, 64, 1>, <1, 0, 2>, <1, 0, 2>, 2, 16, 16, 0, <4, 64, 1>, <1, 0, 2>, <1, 0, 2>, 2, 8, 8, 1, 2, 1, <1, 64, 1, 4>, 16, > LoopScheduler: Default, PipelineVersion: v1
+Running verification on GPU.
+1
+a_m_k: dim 2, lengths {4096, 4096}, strides {4096, 1}
+b_k_n: dim 2, lengths {4096, 4096}, strides {1, 4096}
+c_m_n: dim 2, lengths {4096, 4096}, strides {4096, 1}
+Perf: 0.228326 ms, 601.941 TFlops, 220.438 GB/s, DeviceGemm_Xdl_CShuffle<MPadding, 1, 256, 128, 128, 64, 16, 16, 32, 32, 2, 2, <4, 64, 1>, <1, 0, 2>, <1, 0, 2>, 2, 16, 16, 0, <4, 64, 1>, <1, 0, 2>, <1, 0, 2>, 2, 8, 8, 1, 2, 1, <1, 64, 1, 4>, 8, > LoopScheduler: Default, PipelineVersion: v1
+Running verification on GPU.
+1
+a_m_k: dim 2, lengths {4096, 4096}, strides {4096, 1}
+b_k_n: dim 2, lengths {4096, 4096}, strides {1, 4096}
+c_m_n: dim 2, lengths {4096, 4096}, strides {4096, 1}
+Perf: 0.220786 ms, 622.498 TFlops, 227.966 GB/s, DeviceGemm_Xdl_CShuffle<MPadding, 1, 256, 128, 128, 64, 16, 16, 32, 32, 2, 2, <4, 64, 1>, <1, 0, 2>, <1, 0, 2>, 2, 16, 16, 0, <4, 64, 1>, <1, 0, 2>, <1, 0, 2>, 2, 8, 8, 0, 2, 1, <1, 64, 1, 4>, 16, > LoopScheduler: Default, PipelineVersion: v1
+Running verification on GPU.
+1
+a_m_k: dim 2, lengths {4096, 4096}, strides {4096, 1}
+b_k_n: dim 2, lengths {4096, 4096}, strides {1, 4096}
+c_m_n: dim 2, lengths {4096, 4096}, strides {4096, 1}
+Perf: 0.220327 ms, 623.795 TFlops, 228.44 GB/s, DeviceGemm_Xdl_CShuffle<MPadding, 1, 256, 128, 128, 64, 16, 16, 32, 32, 2, 2, <4, 64, 1>, <1, 0, 2>, <1, 0, 2>, 2, 16, 16, 0, <4, 64, 1>, <1, 0, 2>, <1, 0, 2>, 2, 8, 8, 0, 2, 1, <1, 64, 1, 4>, 8, > LoopScheduler: Default, PipelineVersion: v1
+Running verification on GPU.
+1
+a_m_k: dim 2, lengths {4096, 4096}, strides {4096, 1}
+b_k_n: dim 2, lengths {4096, 4096}, strides {1, 4096}
+c_m_n: dim 2, lengths {4096, 4096}, strides {4096, 1}
+Perf: 0.221646 ms, 620.084 TFlops, 227.081 GB/s, DeviceGemm_Xdl_CShuffle<MPadding, 1, 256, 128, 128, 64, 16, 16, 32, 32, 2, 2, <4, 64, 1>, <1, 0, 2>, <1, 0, 2>, 2, 16, 16, 0, <4, 64, 1>, <1, 0, 2>, <1, 0, 2>, 2, 8, 4, 1, 2, 1, <1, 64, 1, 4>, 16, > LoopScheduler: Default, PipelineVersion: v1
+Running verification on GPU.
+1
+a_m_k: dim 2, lengths {4096, 4096}, strides {4096, 1}
+b_k_n: dim 2, lengths {4096, 4096}, strides {1, 4096}
+c_m_n: dim 2, lengths {4096, 4096}, strides {4096, 1}
+Perf: 0.222962 ms, 616.424 TFlops, 225.741 GB/s, DeviceGemm_Xdl_CShuffle<MPadding, 1, 256, 128, 128, 64, 16, 16, 32, 32, 2, 2, <4, 64, 1>, <1, 0, 2>, <1, 0, 2>, 2, 16, 16, 0, <4, 64, 1>, <1, 0, 2>, <1, 0, 2>, 2, 8, 4, 1, 2, 1, <1, 64, 1, 4>, 8, > LoopScheduler: Default, PipelineVersion: v1
+Running verification on GPU.
+1
+a_m_k: dim 2, lengths {4096, 4096}, strides {4096, 1}
+b_k_n: dim 2, lengths {4096, 4096}, strides {1, 4096}
+c_m_n: dim 2, lengths {4096, 4096}, strides {4096, 1}
+Perf: 0.221058 ms, 621.733 TFlops, 227.686 GB/s, DeviceGemm_Xdl_CShuffle<MPadding, 1, 256, 128, 128, 64, 16, 16, 32, 32, 2, 2, <4, 64, 1>, <1, 0, 2>, <1, 0, 2>, 2, 16, 16, 0, <4, 64, 1>, <1, 0, 2>, <1, 0, 2>, 2, 8, 4, 0, 2, 1, <1, 64, 1, 4>, 16, > LoopScheduler: Default, PipelineVersion: v1
+Running verification on GPU.
+1
+a_m_k: dim 2, lengths {4096, 4096}, strides {4096, 1}
+b_k_n: dim 2, lengths {4096, 4096}, strides {1, 4096}
+c_m_n: dim 2, lengths {4096, 4096}, strides {4096, 1}
+Perf: 0.218396 ms, 629.31 TFlops, 230.46 GB/s, DeviceGemm_Xdl_CShuffle<MPadding, 1, 256, 128, 128, 64, 16, 16, 32, 32, 2, 2, <4, 64, 1>, <1, 0, 2>, <1, 0, 2>, 2, 16, 16, 0, <4, 64, 1>, <1, 0, 2>, <1, 0, 2>, 2, 8, 4, 0, 2, 1, <1, 64, 1, 4>, 8, > LoopScheduler: Default, PipelineVersion: v1
+Running verification on GPU.
+1
+a_m_k: dim 2, lengths {4096, 4096}, strides {4096, 1}
+b_k_n: dim 2, lengths {4096, 4096}, strides {1, 4096}
+c_m_n: dim 2, lengths {4096, 4096}, strides {4096, 1}
+Perf: 0.29028 ms, 473.47 TFlops, 173.39 GB/s, DeviceGemm_Xdl_CShuffle<MPadding, 1, 256, 128, 128, 64, 16, 16, 32, 32, 2, 2, <4, 64, 1>, <1, 0, 2>, <1, 0, 2>, 2, 16, 16, 0, <4, 64, 1>, <1, 0, 2>, <1, 0, 2>, 2, 4, 8, 1, 2, 1, <1, 64, 1, 4>, 16, > LoopScheduler: Default, PipelineVersion: v1
+Running verification on GPU.
+1
+a_m_k: dim 2, lengths {4096, 4096}, strides {4096, 1}
+b_k_n: dim 2, lengths {4096, 4096}, strides {1, 4096}
+c_m_n: dim 2, lengths {4096, 4096}, strides {4096, 1}
+Perf: 0.291086 ms, 472.159 TFlops, 172.91 GB/s, DeviceGemm_Xdl_CShuffle<MPadding, 1, 256, 128, 128, 64, 16, 16, 32, 32, 2, 2, <4, 64, 1>, <1, 0, 2>, <1, 0, 2>, 2, 16, 16, 0, <4, 64, 1>, <1, 0, 2>, <1, 0, 2>, 2, 4, 8, 1, 2, 1, <1, 64, 1, 4>, 8, > LoopScheduler: Default, PipelineVersion: v1
+Running verification on GPU.
+1
+a_m_k: dim 2, lengths {4096, 4096}, strides {4096, 1}
+b_k_n: dim 2, lengths {4096, 4096}, strides {1, 4096}
+c_m_n: dim 2, lengths {4096, 4096}, strides {4096, 1}
+Perf: 0.28497 ms, 482.293 TFlops, 176.621 GB/s, DeviceGemm_Xdl_CShuffle<MPadding, 1, 256, 128, 128, 64, 16, 16, 32, 32, 2, 2, <4, 64, 1>, <1, 0, 2>, <1, 0, 2>, 2, 16, 16, 0, <4, 64, 1>, <1, 0, 2>, <1, 0, 2>, 2, 4, 8, 0, 2, 1, <1, 64, 1, 4>, 16, > LoopScheduler: Default, PipelineVersion: v1
+Running verification on GPU.
+1
+a_m_k: dim 2, lengths {4096, 4096}, strides {4096, 1}
+b_k_n: dim 2, lengths {4096, 4096}, strides {1, 4096}
+c_m_n: dim 2, lengths {4096, 4096}, strides {4096, 1}
+Perf: 0.28729 ms, 478.399 TFlops, 175.195 GB/s, DeviceGemm_Xdl_CShuffle<MPadding, 1, 256, 128, 128, 64, 16, 16, 32, 32, 2, 2, <4, 64, 1>, <1, 0, 2>, <1, 0, 2>, 2, 16, 16, 0, <4, 64, 1>, <1, 0, 2>, <1, 0, 2>, 2, 4, 8, 0, 2, 1, <1, 64, 1, 4>, 8, > LoopScheduler: Default, PipelineVersion: v1
+Running verification on GPU.
+1
+a_m_k: dim 2, lengths {4096, 4096}, strides {4096, 1}
+b_k_n: dim 2, lengths {4096, 4096}, strides {1, 4096}
+c_m_n: dim 2, lengths {4096, 4096}, strides {4096, 1}
+Perf: 0.289933 ms, 474.037 TFlops, 173.598 GB/s, DeviceGemm_Xdl_CShuffle<MPadding, 1, 256, 128, 128, 64, 16, 16, 32, 32, 2, 2, <4, 64, 1>, <1, 0, 2>, <1, 0, 2>, 2, 16, 16, 0, <4, 64, 1>, <1, 0, 2>, <1, 0, 2>, 2, 4, 4, 1, 2, 1, <1, 64, 1, 4>, 16, > LoopScheduler: Default, PipelineVersion: v1
+Running verification on GPU.
+1
+a_m_k: dim 2, lengths {4096, 4096}, strides {4096, 1}
+b_k_n: dim 2, lengths {4096, 4096}, strides {1, 4096}
+c_m_n: dim 2, lengths {4096, 4096}, strides {4096, 1}
+Perf: 0.290239 ms, 473.538 TFlops, 173.415 GB/s, DeviceGemm_Xdl_CShuffle<MPadding, 1, 256, 128, 128, 64, 16, 16, 32, 32, 2, 2, <4, 64, 1>, <1, 0, 2>, <1, 0, 2>, 2, 16, 16, 0, <4, 64, 1>, <1, 0, 2>, <1, 0, 2>, 2, 4, 4, 1, 2, 1, <1, 64, 1, 4>, 8, > LoopScheduler: Default, PipelineVersion: v1
+Running verification on GPU.
+1
+a_m_k: dim 2, lengths {4096, 4096}, strides {4096, 1}
+b_k_n: dim 2, lengths {4096, 4096}, strides {1, 4096}
+c_m_n: dim 2, lengths {4096, 4096}, strides {4096, 1}
+Perf: 0.287569 ms, 477.933 TFlops, 175.024 GB/s, DeviceGemm_Xdl_CShuffle<MPadding, 1, 256, 128, 128, 64, 16, 16, 32, 32, 2, 2, <4, 64, 1>, <1, 0, 2>, <1, 0, 2>, 2, 16, 16, 0, <4, 64, 1>, <1, 0, 2>, <1, 0, 2>, 2, 4, 4, 0, 2, 1, <1, 64, 1, 4>, 16, > LoopScheduler: Default, PipelineVersion: v1
+Running verification on GPU.
+1
+a_m_k: dim 2, lengths {4096, 4096}, strides {4096, 1}
+b_k_n: dim 2, lengths {4096, 4096}, strides {1, 4096}
+c_m_n: dim 2, lengths {4096, 4096}, strides {4096, 1}
+Perf: 0.288208 ms, 476.874 TFlops, 174.637 GB/s, DeviceGemm_Xdl_CShuffle<MPadding, 1, 256, 128, 128, 64, 16, 16, 32, 32, 2, 2, <4, 64, 1>, <1, 0, 2>, <1, 0, 2>, 2, 16, 16, 0, <4, 64, 1>, <1, 0, 2>, <1, 0, 2>, 2, 4, 4, 0, 2, 1, <1, 64, 1, 4>, 8, > LoopScheduler: Default, PipelineVersion: v1
+Running verification on GPU.
+1
+a_m_k: dim 2, lengths {4096, 4096}, strides {4096, 1}
+b_k_n: dim 2, lengths {4096, 4096}, strides {1, 4096}
+c_m_n: dim 2, lengths {4096, 4096}, strides {4096, 1}
+Perf: 1.12638 ms, 122.019 TFlops, 44.6846 GB/s, DeviceGemm_Xdl_CShuffle<MPadding, 1, 256, 128, 128, 64, 16, 16, 32, 32, 2, 2, <4, 64, 1>, <1, 0, 2>, <1, 0, 2>, 2, 16, 16, 0, <4, 64, 1>, <1, 0, 2>, <1, 0, 2>, 3, 8, 8, 1, 2, 1, <1, 64, 1, 4>, 16, > LoopScheduler: Default, PipelineVersion: v1
+Running verification on GPU.
+0
+a_m_k: dim 2, lengths {4096, 4096}, strides {4096, 1}
+b_k_n: dim 2, lengths {4096, 4096}, strides {1, 4096}
+c_m_n: dim 2, lengths {4096, 4096}, strides {4096, 1}
+Perf: 1.1261 ms, 122.048 TFlops, 44.6954 GB/s, DeviceGemm_Xdl_CShuffle<MPadding, 1, 256, 128, 128, 64, 16, 16, 32, 32, 2, 2, <4, 64, 1>, <1, 0, 2>, <1, 0, 2>, 2, 16, 16, 0, <4, 64, 1>, <1, 0, 2>, <1, 0, 2>, 3, 8, 8, 1, 2, 1, <1, 64, 1, 4>, 8, > LoopScheduler: Default, PipelineVersion: v1
+Running verification on GPU.
+0
+a_m_k: dim 2, lengths {4096, 4096}, strides {4096, 1}
+b_k_n: dim 2, lengths {4096, 4096}, strides {1, 4096}
+c_m_n: dim 2, lengths {4096, 4096}, strides {4096, 1}
+Perf: 1.11632 ms, 123.118 TFlops, 45.0871 GB/s, DeviceGemm_Xdl_CShuffle<MPadding, 1, 256, 128, 128, 64, 16, 16, 32, 32, 2, 2, <4, 64, 1>, <1, 0, 2>, <1, 0, 2>, 2, 16, 16, 0, <4, 64, 1>, <1, 0, 2>, <1, 0, 2>, 3, 8, 8, 0, 2, 1, <1, 64, 1, 4>, 16, > LoopScheduler: Default, PipelineVersion: v1
+Running verification on GPU.
+0
+a_m_k: dim 2, lengths {4096, 4096}, strides {4096, 1}
+b_k_n: dim 2, lengths {4096, 4096}, strides {1, 4096}
+c_m_n: dim 2, lengths {4096, 4096}, strides {4096, 1}
+Perf: 1.12643 ms, 122.012 TFlops, 44.6823 GB/s, DeviceGemm_Xdl_CShuffle<MPadding, 1, 256, 128, 128, 64, 16, 16, 32, 32, 2, 2, <4, 64, 1>, <1, 0, 2>, <1, 0, 2>, 2, 16, 16, 0, <4, 64, 1>, <1, 0, 2>, <1, 0, 2>, 3, 8, 8, 0, 2, 1, <1, 64, 1, 4>, 8, > LoopScheduler: Default, PipelineVersion: v1
+Running verification on GPU.
+0
+a_m_k: dim 2, lengths {4096, 4096}, strides {4096, 1}
+b_k_n: dim 2, lengths {4096, 4096}, strides {1, 4096}
+c_m_n: dim 2, lengths {4096, 4096}, strides {4096, 1}
+Perf: 1.12442 ms, 122.231 TFlops, 44.7624 GB/s, DeviceGemm_Xdl_CShuffle<MPadding, 1, 256, 128, 128, 64, 16, 16, 32, 32, 2, 2, <4, 64, 1>, <1, 0, 2>, <1, 0, 2>, 2, 16, 16, 0, <4, 64, 1>, <1, 0, 2>, <1, 0, 2>, 3, 8, 4, 1, 2, 1, <1, 64, 1, 4>, 16, > LoopScheduler: Default, PipelineVersion: v1
+Running verification on GPU.
+0
+a_m_k: dim 2, lengths {4096, 4096}, strides {4096, 1}
+b_k_n: dim 2, lengths {4096, 4096}, strides {1, 4096}
+c_m_n: dim 2, lengths {4096, 4096}, strides {4096, 1}
+Perf: 1.12534 ms, 122.131 TFlops, 44.7256 GB/s, DeviceGemm_Xdl_CShuffle<MPadding, 1, 256, 128, 128, 64, 16, 16, 32, 32, 2, 2, <4, 64, 1>, <1, 0, 2>, <1, 0, 2>, 2, 16, 16, 0, <4, 64, 1>, <1, 0, 2>, <1, 0, 2>, 3, 8, 4, 1, 2, 1, <1, 64, 1, 4>, 8, > LoopScheduler: Default, PipelineVersion: v1
+Running verification on GPU.
+0
+a_m_k: dim 2, lengths {4096, 4096}, strides {4096, 1}
+b_k_n: dim 2, lengths {4096, 4096}, strides {1, 4096}
+c_m_n: dim 2, lengths {4096, 4096}, strides {4096, 1}
+Perf: 1.13728 ms, 120.849 TFlops, 44.2563 GB/s, DeviceGemm_Xdl_CShuffle<MPadding, 1, 256, 128, 128, 64, 16, 16, 32, 32, 2, 2, <4, 64, 1>, <1, 0, 2>, <1, 0, 2>, 2, 16, 16, 0, <4, 64, 1>, <1, 0, 2>, <1, 0, 2>, 3, 8, 4, 0, 2, 1, <1, 64, 1, 4>, 16, > LoopScheduler: Default, PipelineVersion: v1
+Running verification on GPU.
+0
+a_m_k: dim 2, lengths {4096, 4096}, strides {4096, 1}
+b_k_n: dim 2, lengths {4096, 4096}, strides {1, 4096}
+c_m_n: dim 2, lengths {4096, 4096}, strides {4096, 1}
+Perf: 1.13685 ms, 120.895 TFlops, 44.2729 GB/s, DeviceGemm_Xdl_CShuffle<MPadding, 1, 256, 128, 128, 64, 16, 16, 32, 32, 2, 2, <4, 64, 1>, <1, 0, 2>, <1, 0, 2>, 2, 16, 16, 0, <4, 64, 1>, <1, 0, 2>, <1, 0, 2>, 3, 8, 4, 0, 2, 1, <1, 64, 1, 4>, 8, > LoopScheduler: Default, PipelineVersion: v1
+Running verification on GPU.
+0
+a_m_k: dim 2, lengths {4096, 4096}, strides {4096, 1}
+b_k_n: dim 2, lengths {4096, 4096}, strides {1, 4096}
+c_m_n: dim 2, lengths {4096, 4096}, strides {4096, 1}
+Perf: 1.13039 ms, 121.586 TFlops, 44.526 GB/s, DeviceGemm_Xdl_CShuffle<MPadding, 1, 256, 128, 128, 64, 16, 16, 32, 32, 2, 2, <4, 64, 1>, <1, 0, 2>, <1, 0, 2>, 2, 16, 16, 0, <4, 64, 1>, <1, 0, 2>, <1, 0, 2>, 3, 4, 8, 1, 2, 1, <1, 64, 1, 4>, 16, > LoopScheduler: Default, PipelineVersion: v1
+Running verification on GPU.
+0
+a_m_k: dim 2, lengths {4096, 4096}, strides {4096, 1}
+b_k_n: dim 2, lengths {4096, 4096}, strides {1, 4096}
+c_m_n: dim 2, lengths {4096, 4096}, strides {4096, 1}
+Perf: 1.13207 ms, 121.405 TFlops, 44.4598 GB/s, DeviceGemm_Xdl_CShuffle<MPadding, 1, 256, 128, 128, 64, 16, 16, 32, 32, 2, 2, <4, 64, 1>, <1, 0, 2>, <1, 0, 2>, 2, 16, 16, 0, <4, 64, 1>, <1, 0, 2>, <1, 0, 2>, 3, 4, 8, 1, 2, 1, <1, 64, 1, 4>, 8, > LoopScheduler: Default, PipelineVersion: v1
+Running verification on GPU.
+0
+a_m_k: dim 2, lengths {4096, 4096}, strides {4096, 1}
+b_k_n: dim 2, lengths {4096, 4096}, strides {1, 4096}
+c_m_n: dim 2, lengths {4096, 4096}, strides {4096, 1}
+Perf: 1.11141 ms, 123.662 TFlops, 45.2865 GB/s, DeviceGemm_Xdl_CShuffle<MPadding, 1, 256, 128, 128, 64, 16, 16, 32, 32, 2, 2, <4, 64, 1>, <1, 0, 2>, <1, 0, 2>, 2, 16, 16, 0, <4, 64, 1>, <1, 0, 2>, <1, 0, 2>, 3, 4, 8, 0, 2, 1, <1, 64, 1, 4>, 16, > LoopScheduler: Default, PipelineVersion: v1
+Running verification on GPU.
+0
