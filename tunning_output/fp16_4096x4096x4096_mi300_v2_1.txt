@@ -1,0 +1,30 @@
+a_m_k: dim 2, lengths {4096, 4096}, strides {4096, 1}
+b_k_n: dim 2, lengths {4096, 4096}, strides {4096, 1}
+c_m_n: dim 2, lengths {4096, 4096}, strides {4096, 1}
+Perf: 0.291258 ms, 471.88 TFlops, 345.615 GB/s, DeviceGemm_Xdl_CShuffleV2<MNPadding, 2, 256, 256, 128, 32, 8, 4, 32, 32, 4, 2, 2, 8, 4, 1, 1, 4, 2, 0, 2, 1, 4> LoopScheduler: Default, PipelineVersion: v1
+Running verification on GPU.
+1
+a_m_k: dim 2, lengths {4096, 4096}, strides {4096, 1}
+b_k_n: dim 2, lengths {4096, 4096}, strides {4096, 1}
+c_m_n: dim 2, lengths {4096, 4096}, strides {4096, 1}
+Perf: 0.290124 ms, 473.724 TFlops, 346.966 GB/s, DeviceGemm_Xdl_CShuffleV2<MNPadding, 2, 256, 256, 128, 32, 8, 4, 32, 32, 4, 2, 2, 8, 4, 1, 1, 4, 2, 0, 2, 1, 4> LoopScheduler: Default, PipelineVersion: v1
+Running verification on GPU.
+1
+a_m_k: dim 2, lengths {4096, 4096}, strides {4096, 1}
+b_k_n: dim 2, lengths {4096, 4096}, strides {4096, 1}
+c_m_n: dim 2, lengths {4096, 4096}, strides {4096, 1}
+Perf: 0.256941 ms, 534.906 TFlops, 391.777 GB/s, DeviceGemm_Xdl_CShuffleV2<MNPadding, 2, 256, 256, 256, 32, 8, 4, 32, 32, 4, 4, <4, 64, 1, >, <1, 0, 2, >, <1, 0, 2, >, 2, 8, 8, 0, <8, 32, 1, >, <0, 2, 1, >, <0, 2, 1, >, 1, 8, 4, 0, 1, 1, <1, 32, 1, 8, >, 8> LoopScheduler: Default, PipelineVersion: v1
+Running verification on GPU.
+1
+a_m_k: dim 2, lengths {4096, 4096}, strides {4096, 1}
+b_k_n: dim 2, lengths {4096, 4096}, strides {4096, 1}
+c_m_n: dim 2, lengths {4096, 4096}, strides {4096, 1}
+Perf: 0.256767 ms, 535.266 TFlops, 392.041 GB/s, DeviceGemm_Xdl_CShuffleV2<MNPadding, 2, 256, 256, 256, 32, 8, 4, 32, 32, 4, 4, <4641>, <102>, <102>, 2, 8, 8, 0, <8321>, <021>, <021>, 1, 8, 4, 0, 1, 1, <13218>, 8> LoopScheduler: Default, PipelineVersion: v1
+Running verification on GPU.
+1
+a_m_k: dim 2, lengths {4096, 4096}, strides {4096, 1}
+b_k_n: dim 2, lengths {4096, 4096}, strides {4096, 1}
+c_m_n: dim 2, lengths {4096, 4096}, strides {4096, 1}
+Perf: 0.259193 ms, 530.257 TFlops, 388.372 GB/s, DeviceGemm_Xdl_CShuffleV2<MNPadding, 2, 256, 256, 256, 32, 8, 4, 32, 32, 4, 4, <4, 64, 1>, <1, 0, 2>, <1, 0, 2>, 2, 8, 8, 0, <8, 32, 1>, <0, 2, 1>, <0, 2, 1>, 1, 8, 4, 0, 1, 1, <1, 32, 1, 8>, 8> LoopScheduler: Default, PipelineVersion: v1
+Running verification on GPU.
+1

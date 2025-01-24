@@ -182,6 +182,21 @@ struct Sequence
     }
 };
 
+template <typename Seq>
+struct Printer;
+
+template <std::size_t... Is>
+struct Printer<Sequence<Is...>> {
+    static std::string print() {
+        std::ostringstream oss;
+        oss << "<";
+        std::size_t index = 0;
+        ((oss << Is << (++index < sizeof...(Is) ? ", " : "")), ...);
+        oss << ">";
+        return oss.str();
+    }
+};
+
 // merge sequence
 template <typename Seq, typename... Seqs>
 struct sequence_merge

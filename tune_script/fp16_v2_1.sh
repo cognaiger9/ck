@@ -1,5 +1,5 @@
 #!/bin/bash
-export ROCR_VISIBLE_DEVICES=4
+export ROCR_VISIBLE_DEVICES=0
 
 # Fixed path
 OUT_TEXT_DIR="../tunning_output"
@@ -7,9 +7,9 @@ OUT_TEXT_DIR="../tunning_output"
 SOURCE_FILE="../example/01_gemm/fp16_v2.cpp"
 
 # Variable
-M=432000
-N=4608
-K=1152
+M=4096
+N=4096
+K=4096
 TYPE="fp16"
 ALGO="v2"
 PARTITION=1
@@ -57,7 +57,7 @@ for mpb in "${MPB[@]}"; do
                                                     for bk1 in "${BK1[@]}"; do
                                                         # Substitute the placeholders in the source file
                                                         sed "s/PRE/$pre/g; s/MPB/$mpb/g; s/NPB/$npb/g; s/KPB/$kpb/g; s/MXPW/$mxpw/g; s/NXPW/$nxpw/g; s/MPXDL/$mpxdl/g; s/NPXDL/$npxdl/g; s/ASP/$asp/g; s/ADB/$adb/g; s/BOOL1/$bool1/g; s/BS1/$bs/g; s/BSP/$bsp/g; s/BDP/$bdp/g; s/BOOL2/$bool2/g; s/CMPS/$cmps/g; s/CSPS/$csps/g; s/BK11/$bk1/g" "$SOURCE_FILE" > "$TEMP_FILE"
-                                                        if ! make -j24 -C ../build ${EXE_FILE}; then
+                                                        if ! make -j12 -C ../build ${EXE_FILE}; then
                                                             echo "Error: make failed for ${EXE_FILE}" >&2
                                                         fi
                                                         # Run executable
